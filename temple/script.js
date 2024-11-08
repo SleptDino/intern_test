@@ -24,6 +24,10 @@ function toggleAutoplay() {
 }
 
 function setColumns() {
-  const columnCount = document.getElementById('columnSelector').value;
-  gallery.style.gridTemplateColumns = `repeat(${columnCount}, 1fr)`;
+  const columnSelector = document.getElementById('columnSelector'); 
+  const galleryContainer = document.getElementById('galleryContainer'); 
+  const columns = columnSelector.value; 
+  
+ 
+  galleryContainer.style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
 }
