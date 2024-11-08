@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Temple By Region</title>
+</head>
+<body>
+  <div id="temple" class="templeall">
+    <div class="controls">
+      <h1>Temple By Region<br></h1>
+      <p>ค้นหาวัดตามภูมิภาค<br><br></p>
+      <label>เลือกจำนวนคอลัมน์:</label>
+      <select id="columnSelector" onchange="setColumns()">
+        <option value="2">2 คอลัมน์</option>
+        <option value="3">3 คอลัมน์</option>
+        <option value="4" selected>4 คอลัมน์</option>
+      </select>
+
+      <label>
+        <input type="checkbox" id="autoplayToggle" onclick="toggleAutoplay()"> Auto Play
+      </label>
+    </div>
+
+    <div class="slider-container">
+      <div id="galleryContainer" class="gallery">
+        <div class="wat">
+          <img src="images/northtemple.jpg" class="imagewatthai2">
+          <div class="overlay">ภาคเหนือ</div>
+        </div>
+        <div class="wat">
+          <img src="images/middle.jpg" class="imagewatthai2">
+          <div class="overlay">ภาคกลาง</div>
+        </div>
+        <div class="wat">
+          <img src="images/esarn.jpg" class="imagewatthai2">
+          <div class="overlay">ภาคตะวันออกเฉียงเหนือ</div>
+        </div>
+        <div class="wat">
+          <img src="images/southern.jpg" class="imagewatthai2">
+          <div class="overlay">ภาคใต้</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
